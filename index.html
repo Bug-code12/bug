@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BugCode - Software Agency</title>
+ 
+   
+  <link rel="stylesheet" href="styels.css">
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+  <img src="img/logo_cleanup-removebg-preview__1_-removebg-preview.png" alt="">
+  <span class="logo-text">BugCode</span>
+</div>
+      <div class="nav-links" id="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#work">Our Work</a>
+        <a href="#contact">Contact</a>
+       
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+      </div>
+
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1><span class="gradient-text">Fast</span> & <span class="gradient-text">Reliable</span> Software Solutions</h1>
+        <p>We build custom software solutions that drive business growth and innovation. Our team of experts is ready to turn your ideas into reality.</p>
+        <div class="btn-group">
+          <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Get in Touch</button>
+          <a href="#services" class="btn btn-outline">Our Services</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-gradient"></div>
+        <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&h=600" alt="Digital solutions">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <div class="divider"></div>
+        <p>We offer a comprehensive range of software development services to help businesses thrive in the digital era.</p>
+      </div>
+
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <h3>Custom Software Development</h3>
+          <p>We create custom software solutions tailored to your business needs.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+          </div>
+          <h3>Web Application Development</h3>
+          <p>From simple websites to complex web applications, we've got you covered.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <h3>Mobile App Development</h3>
+          <p>Native and cross-platform mobile applications for iOS and Android.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          </div>
+          <h3>AI & Data analytics</h3>
+          <p>We can give your system the ability to see, understand language, and predict the future.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          </div>
+          <h3>Backend development</h3>
+          <p>Modular software architecture built for scalability, maintainability and reliability</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3>Management Systems</h3>
+          <p>Elevate your business management with our holistic management systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image">
+          <div class="image-decorator-1"></div>
+          <div class="image-decorator-2"></div>
+          <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&h=400" alt="Our team working">
+        </div>
+        <div class="about-text">
+          <h2>About BugCode</h2>
+          <div class="divider"></div>
+          <p>BugCode is a leading software agency committed to delivering innovative technology solutions that empower businesses to achieve their goals.</p>
+          <p>Founded in 2025, we've partnered with organizations of all sizes across various industries to develop software that solves complex business problems and drives growth.</p>
+         
+          <div class="about-values">
+            <div class="value">
+              <h3>Our Mission</h3>
+              <p>To create exceptional software that transforms businesses.</p>
+            </div>
+            <div class="value">
+              <h3>Our Vision</h3>
+              <p>To be the most trusted partner for software innovation.</p>
+            </div>
+          </div>
+         
+          <a href="#contact" class="btn btn-primary">Learn More About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat">
+          <h3 class="stat-value" data-value="150">0</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat">
+          <h3 class="stat-value" data-value="50">0</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat">
+          <h3 class="stat-value" data-value="15">0</h3>
+          <p>Running projects</p>
+        </div>
+        <div class="stat">
+          <h3 class="stat-value" data-value="1">0</h3>
+          <p>Years of Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Work Section -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Portfolio</h2>
+        <div class="divider"></div>
+        <p>Explore our recent projects and see how we've helped our clients achieve their business goals.</p>
+      </div>
+
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Web Development">Web Development</button>
+        <button class="filter-btn" data-filter="Mobile Development">Mobile Development</button>
+        <button class="filter-btn" data-filter="Enterprise Solutions">Management System</button>
+        <button class="filter-btn" data-filter="Data Analytics">Ai & Data Analytics</button>
+      </div>
+
+
+      <div class="projects-grid">
+        <div class="project-card" data-category="Web Development">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&h=400" alt="E-commerce Platform">
+          </div>
+          <div class="project-content">
+            <span class="project-category">Web Development</span>
+            <h3>E-commerce Platform</h3>
+            <p>Custom e-commerce solution with inventory management and payment processing.</p>
+            <button class="btn btn-outline">View Case Study</button>
+          </div>
+        </div>
+        <div class="project-card" data-category="Enterprise Solutions">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&h=400" alt="Healthcare Management System">
+          </div>
+          <div class="project-content">
+            <span class="project-category">Enterprise Solutions</span>
+            <h3>Healthcare Management System</h3>
+            <p>Integrated system for patient records, appointments, and billing.</p>
+            <button class="btn btn-outline">View Case Study</button>
+          </div>
+        </div>
+        <div class="project-card" data-category="Mobile Development">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=600&h=400" alt="Logistics Mobile App">
+          </div>
+          <div class="project-content">
+            <span class="project-category">Mobile Development</span>
+            <h3>Logistics Mobile App</h3>
+            <p>Real-time tracking and fleet management for delivery companies.</p>
+            <button class="btn btn-outline">View Case Study</button>
+          </div>
+        </div>
+        <div class="project-card" data-category="Data Analytics">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&h=400" alt="Financial Analytics Dashboard">
+          </div>
+          <div class="project-content">
+            <span class="project-category">Data Analytics</span>
+            <h3>Financial Analytics Dashboard</h3>
+            <p>Interactive dashboard for visualizing financial data and market trends.</p>
+            <button class="btn btn-outline">View Case Study</button>
+          </div>
+        </div>
+      </div>
+      <div class="text-center"><a href="#contact" class="btn btn-primary">View All Projects</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Clients Say</h2>
+        <div class="divider"></div>
+        <p>Don't just take our word for it. Here's what our clients have to say about working with BugCode.</p>
+      </div>
+
+
+      <div class="testimonial-slider">
+        <div class="testimonial-quotes">
+          <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+            <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"></path>
+          </svg>
+         
+          <div class="testimonial-slide active" data-index="0">
+            <p class="testimonial-text">"BugCode transformed our business with a custom software solution that streamlined our operations and increased efficiency by 40%."</p>
+            <div class="testimonial-author">
+             
+              <div>
+                <p class="author-name">Jennifer K.</p>
+                <p class="author-title">CEO, Retail Solutions Inc.</p>
+              </div>
+            </div>
+          </div>
+         
+          <div class="testimonial-slide" data-index="1">
+            <p class="testimonial-text">"The mobile app developed by BugCode helped us increase customer engagement and drive a 30% growth in revenue within the first six months."</p>
+            <div class="testimonial-author">
+             
+              <div>
+                <p class="author-name">Michael T.</p>
+                <p class="author-title">Marketing Director, TechFlow</p>
+              </div>
+            </div>
+          </div>
+         
+          <div class="testimonial-slide" data-index="2">
+            <p class="testimonial-text">"Working with BugCodewas a game-changer for our healthcare practice. The patient management system they built perfectly addressed our unique needs."</p>
+            <div class="testimonial-author">
+             
+              <div>
+                <p class="author-name">Dr. Sarah P.</p>
+                <p class="author-title">Medical Director, HealthFirst Clinic</p>
+              </div>
+            </div>
+          </div>
+         
+          <div class="testimonial-controls">
+            <button class="testimonial-prev" aria-label="Previous testimonial">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+            <div class="testimonial-dots"></div>
+            <button class="testimonial-next" aria-label="Next testimonial">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ Section -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <div class="divider"></div>
+        <p>Find answers to common questions about our services, process, and technology approach.</p>
+      </div>
+     
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-btn">What services does BugCode offer?</button>
+          <div class="accordion-content">
+            <p>BugCode offers a comprehensive range of software development services including web application development, mobile app development, custom software solutions, UI/UX design, cloud solutions, and ongoing maintenance and support.</p>
+          </div>
+        </div>
+       
+        <div class="accordion-item">
+          <button class="accordion-btn">How long does it take to complete a typical project?</button>
+          <div class="accordion-content">
+            <p>Project timelines vary depending on complexity and requirements. A simple website might take 2-4 weeks, while complex enterprise applications can take several months. During our initial consultation, we'll provide a detailed timeline based on your specific needs.</p>
+          </div>
+        </div>
+       
+        <div class="accordion-item">
+          <button class="accordion-btn">Do you provide support after the project is completed?</button>
+          <div class="accordion-content">
+            <p>Absolutely! We offer ongoing maintenance and support packages to ensure your software continues to run smoothly after launch. Our support team is available to address any issues, implement updates, and make improvements as needed.</p>
+          </div>
+        </div>
+       
+        <div class="accordion-item">
+          <button class="accordion-btn">What technologies do you specialize in?</button>
+          <div class="accordion-content">
+            <p>Our team is proficient in a wide range of technologies including React, Angular, Vue.js, Node.js, Python, PHP, .NET, iOS and Android development, AWS, Azure, and more. We select the best technology stack for each project based on specific requirements.</p>
+          </div>
+        </div>
+       
+        <div class="accordion-item">
+          <button class="accordion-btn">How do you ensure the quality of your deliverables?</button>
+          <div class="accordion-content">
+            <p>We implement a rigorous quality assurance process that includes code reviews, automated testing, manual testing, and user acceptance testing. Our QA team works alongside developers to catch and address issues before deployment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>Let's work together to build the software solution your business needs to thrive in today's digital world.</p>
+        <div class="btn-group">
+          <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Get Started Now</button>
+<button class="btn btn-outline light" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Schedule a Consultation</button>
+        </div>
+      </div>
+    </div>
+  </section>
+<div class="contact-form">
+  <form id="contactForm" onsubmit="sendToWhatsapp(event)">
+ 
+ 
+
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact" onsubmit="sendToWhatsapp(event) ">
+   
+    <div class="container">
+      <div class="section-header">
+        <h2>Get in Touch</h2>
+        <div class="divider"></div>
+        <p>Ready to start your project? Contact us today to discuss how we can help you achieve your goals.</p>
+      </div>
+     
+      <div class="contact-container">
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="How can we help you?" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell us about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+       
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <div>
+              <p>Email</p>
+              <p>bugcodesoftware@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <div>
+              <p>Phone</p>
+              <p>+201146199888</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <div>
+              <p>located in📍 </p>
+              <p>Egypt,</p>
+              <p>Cairo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-company">
+        <div class="logo">
+          <span>BugCode</span>
+        </div>
+        <p>We build innovative software solutions that drive business growth and transformation.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-link-group">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-link-group">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#services">Custom Software Development</a></li>
+            <li><a href="#services">Web Application Development</a></li>
+            <li><a href="#services">Mobile App Development</a></li>
+            <li><a href="#services">Backend development</a></li>
+            <li><a href="#services">AI & Data analytics</a></li>
+            <li><a href="#services">Management Systems</a></li>
+          </ul>
+        </div>
+        <div class="footer-link-group">
+          <h3>Contact</h3>
+          <ul>
+            <li>Located in📍 Cairo, Egypt</li>
+            <li>bugcodesoftware@gmail.com</li>
+            <li>+201146199888</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> BugCode. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookies Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
